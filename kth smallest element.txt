@@ -1,0 +1,19 @@
+import java.util.Arrays;
+
+public class Ksmallest {
+	public static int kthsmallest(int arr[] ,int k) {
+		int n = arr.length;
+		Arrays.sort(arr);
+		return arr[(k-1)];
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int arr[] = new int[]{12,3,5,7,9};
+		int k =2;
+		
+		System.out.println("kth smallest element is "+" "+ kthsmallest( arr , k));
+
+	}
+
+}

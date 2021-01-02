@@ -1,0 +1,18 @@
+public class klargest {
+
+	public static int kthlargest(int arr[] ,int k) {
+		int n = arr.length;
+		Arrays.sort(arr);
+		return arr[n-(k-1)];
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int arr[] = new int[]{12,3,5,7,9};
+		int k =2;
+		
+		System.out.println("kth largest element is "+" "+ kthlargest( arr , k));
+
+	}
+
+}
